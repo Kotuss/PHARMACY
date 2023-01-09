@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="500.0" style="-fx-background-color: #2E3348; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.metanit.Controller.LoginController">
+   <children>
+      <TextField fx:id="LogField" layoutX="139.0" layoutY="124.0" prefHeight="27.0" prefWidth="222.0" style="-fx-background-color: #d6ebff; -fx-background-radius: 20;" />
+      <Text fill="WHITE" layoutX="150.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логін">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="150.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="PaswordField" layoutX="139.0" layoutY="189.0" prefHeight="27.0" prefWidth="222.0" style="-fx-background-color: #d6ebff; -fx-background-radius: 20;" />
+      <ToggleButton fx:id="TogButSeller" cache="true" cacheHint="SCALE" layoutX="86.0" layoutY="56.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: #9fc6ed; -fx-background-radius: 20;" text="Продавець">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Kindofuser" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="TogButAdmin" cache="true" cacheHint="SCALE" layoutX="263.0" layoutY="56.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="151.0" style="-fx-background-color: #9fc6ed; -fx-background-radius: 20;" text="Адміністратор" textOverrun="CLIP" toggleGroup="$Kindofuser" />
+      <Text fill="WHITE" layoutX="196.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Увійти як:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="ButEnter" layoutX="162.0" layoutY="261.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="176.0" style="-fx-background-color: #9fc6ed; -fx-background-radius: 20;" text="УВІЙТИ" />
+      <Label fx:id="UncorrectLog" alignment="CENTER" layoutX="99.0" layoutY="228.0" prefHeight="20.0" prefWidth="282.0" textAlignment="CENTER" textFill="RED" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="ButtonClose" layoutX="461.0" layoutY="14.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="25.0" style="-fx-background-color: #9fc6ed; -fx-background-radius: 100;" text="X">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
